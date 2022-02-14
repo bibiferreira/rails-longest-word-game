@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+
+ * {
+  box-sizing:border-box;
+}
+body {
+  margin:300px;
+  background-color: #fdd2a9;
+}
+.game-button {
+  padding: 8px;
+  border-radius:4px;
+  background-color: #ed5e68;
+  color: white;
+  border: 0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  cursor: pointer;
+}
+
+input {
+  padding:8px;
+  border-radius:6px;
+  background-color: white;
+  border: 0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+ label {
+   display: block;
+   margin-bottom: 10px;
+ }

@@ -1,0 +1,23 @@
+<!-- app/views/layouts/application.html.erb -->
+
+<!-- A page to display the game settings (random letters), with a form for the user to type a word. A button to submit this form. -->
+<header>
+
+  <h1>Welcome to the longest word-game</h1>
+
+</header>
+
+<div class="game-rules">
+
+  <p>Here is your grid:</p>
+  <p><strong><%= @grid %></strong></p>
+
+</div>
+
+<form action="/submit" method="post" class="game-form">
+  <label>What is your longest word?</label>
+  <input type="text" name="word">
+  <input type="submit" value="send" class="game-button">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%= hidden_field_tag :grid, @grid %>
+</form>
